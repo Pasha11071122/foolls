@@ -1,0 +1,385 @@
+
+
+body {
+  background-color: #615e5e; /* Серый фон */
+} 
+
+.icons {
+  display: flex; /* Используем flexbox для выравнивания элементов */
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.icons img {
+  margin-top: 5px;
+  margin-left: 10px; /* Добавляем небольшой отступ между иконками */
+  height: 50px;
+}
+
+.discover{
+  display: flex;
+  justify-content: center;
+}
+.main-title {
+  
+  margin-top: 17px;
+ 
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 90px;
+line-height: 100%;
+color: #f50505;
+}
+
+.search {
+  margin-top: 20px;
+  display: flex; /* Используем flexbox для выравнивания элементов */
+  align-items: center; /* Выравниваем элементы по вертикали */
+
+}
+
+.search__input {
+  flex: 1;
+  width: 346px;
+  height: 54px;
+  padding-right: 30px; /* Отступ справа для размещения изображения линзы */
+  border-radius: 10px;
+}
+
+.search__button {
+  background-color: transparent; /* Прозрачный фон кнопки */
+  border: none; /* Убираем границу у кнопки */
+  cursor: pointer; /* Задаем стандартный курсор для кнопки */
+  
+}
+
+.search_img {
+  width: 34px;
+  height: 34px;
+  height: auto; /* Автоматическая высота изображения */
+  /* Смещаем изображение линзы влево, чтобы выровнять по центру */
+  margin-left: -3550px;
+}
+
+.search__input::placeholder{
+  color:rgb(240, 11, 228);
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 116%;
+}
+
+.logo {
+  font-family: var(--third-family);
+font-weight: 600;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: -0.02em;
+color: #fff;
+
+}
+.clock {
+  margin-top: 30px;
+}
+
+
+.slider-container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.slide img {
+  width: 1500px;
+  height: 1000px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Распределяем элементы по краям контейнера */
+  align-items: center; /* Выравниваем элементы по вертикали */
+}
+.title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 100%;
+  color: #4c06f1;
+}
+.see-all {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 100%;
+  color: #2c0aef;
+}
+
+.map-container {
+  display: flex;
+      justify-content: center; /* Выравниваем по горизонтали */
+     
+  
+}
+
+.instructions {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #9e9b9b;
+}
+
+.map {
+  width: 80%; /* Задаем ширину карты */
+      max-width: 800px; /* Максимальная ширина карты */
+      height: 500px; /* Задаем высоту карты */
+      border: 1px solid #ccc; /* Граница карты */
+      border-radius: 10px; /* Скругляем углы */
+}
+
+.instructions {
+  text-align: center;
+  margin-top: 25px;
+  background-color: #908c8c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Небольшая тень для визуального выделения */
+  border-radius: 10px; /* Скругляем углы */
+}
+
+
+.instruction-title {
+      
+}
+.instruction-text {
+  font-weight: 100;
+  font-size: 20px;
+  color:blue;
+  margin-top: 30px;
+}
+.instruction-link {
+  font-weight: 100;
+  font-size: 20px;
+  color:blue;
+  margin-top: 30px;
+}
+
+.word-buttons {
+  display: flex; /* Элементы выстроены в ряд */
+  justify-content: space-around; /* Равномерное распределение между элементами */
+  padding: 20px;
+}
+
+.word-button {
+  padding: 10px 20px;
+  border: 2px solid black; /* Граница вокруг каждого "кнопочного" слова */
+  border-radius: 20px; /* Слегка скругленные углы для красоты */
+  cursor: pointer; /* Курсор в виде руки, подсказывающий, что элемент кликабелен */
+  transition: background-color 0.3s; /* Плавное изменение фона при наведении/клике */
+}
+
+.word-button:hover {
+  background-color: rgb(243, 243, 13); /* Светло-серый фон при наведении */
+}
+
+/* Дополнительный класс для активного состояния */
+.word-button.active {
+  background-color: red; /* Красный фон для активного/нажатого слова */
+  color: rgb(232, 240, 7); /* Белый текст для контраста */
+}
+
+
+.side-menu {
+  display: flex;
+  flex-direction: row; /* Элементы располагаются горизонтально */
+  padding: 20px;
+}
+
+.menu-item {
+  font-weight: 600;
+  font-size: 40px;
+  display: flex;
+  align-items: center; /* Выравнивание иконки и текста по центру */
+  margin-right: 200px; /* Отступы между пунктами меню */
+  cursor: pointer;
+  transition: background-color 0.3s;
+   /* Плавное изменение фона */
+   font-family: 'Montserrat', sans-serif; 
+   color:coral;
+}
+
+.menu-item:last-child {
+  margin-right: 0; /* Убираем отступ у последнего элемента */
+}
+
+.menu-item:hover {
+  background-color: #d2f608; 
+  /* Светло-серый фон при наведении */
+  border-radius: 30px;
+}
+
+.icon {
+  display: inline-block;
+  width: 30px; /* Ширина иконки */
+  height: 30px; /* Высота иконки */
+  line-height: 30px; /* Высота строки, чтобы символ был по центру */
+  text-align: center;
+  border: 2px solid #ccc; /* Сероватая граница */
+  border-radius: 50%; /* Круглая иконка */
+  margin-right: 10px; /* Отступ иконки от текста */
+}
+
+/* Стили для планшетов и мобильных устройств */
+@media screen and (min-width: 360px) and (max-width: 1024px) {
+  /* Стили для общих элементов, которые нужно адаптировать */
+
+  .map {
+    width: 100%; /* Полная ширина на планшетах и мобильных */
+  }
+
+  .instructions {
+    padding: 10px; /* Меньший внутренний отступ */
+  }
+
+  .instruction-title {
+    font-size: 24px; /* Уменьшенный размер заголовка */
+  }
+
+  .instruction-text,
+  .instruction-link {
+    font-size: 16px; /* Уменьшенный размер текста */
+  }
+
+  .word-buttons {
+    flex-direction: column; /* Кнопки располагаются вертикально */
+    padding: 10px; /* Меньший внешний отступ */
+  }
+
+  .word-button {
+    margin-bottom: 10px; /* Отступ между кнопками */
+    font-size: 16px; /* Уменьшенный размер текста кнопок */
+  }
+
+  .side-menu {
+    flex-direction: column; /* Пункты меню располагаются вертикально */
+    padding: 10px; /* Меньший внешний отступ */
+  }
+
+  .menu-item {
+    margin-bottom: 10px; /* Отступ между пунктами меню */
+    font-size: 24px; /* Уменьшенный размер текста пунктов */
+  }
+  /* Стили для слайдера */
+.slider-container {
+  width: 100%; /* Ширина занимает всю доступную ширину */
+  overflow: hidden; /* Скрыть содержимое, которое не помещается в области видимости */
+}
+
+.slider {
+  display: flex; /* Используем flexbox для расположения слайдов в ряд */
+  transition: transform 0.5s ease; /* Плавный переход между слайдами */
+}
+
+.slide {
+  flex: 0 0 100%; /* Каждый слайд занимает всю доступную ширину */
+}
+
+.slide img {
+  width: 100%; /* Изображение занимает всю доступную ширину слайда */
+  height: auto; /* Высота изображения автоматически рассчитывается для поддержки соотношения сторон */
+}
+
+/* Стили для контейнера меню */
+.container {
+  width: 100%; /* Ширина занимает всю доступную ширину */
+  text-align: center; /* Выравниваем текст по центру */
+  margin-bottom: 20px; /* Добавляем небольшой отступ снизу */
+}
+
+/* Стили для заголовка меню */
+.title {
+  font-size: 24px; /* Размер шрифта заголовка */
+  font-weight: bold; /* Жирное начертание шрифта */
+}
+
+/* Стили для ссылки "See all" */
+.see-all {
+  font-size: 18px; /* Размер шрифта ссылки */
+  color: #007bff; /* Цвет текста ссылки */
+  text-decoration: none; /* Убираем подчеркивание */
+}
+
+/* Стили для ссылки "See all" при наведении */
+.see-all:hover {
+  text-decoration: underline; /* Добавляем подчеркивание при наведении */
+}
+.icons img {
+  height: 40px; /* Увеличьте высоту иконок */
+  margin-left: 15px; /* Увеличьте отступ между иконками */
+}
+
+.main-title {
+  font-size: 60px; /* Уменьшите размер заголовка */
+}
+
+.search__input {
+  width: 250px; /* Уменьшите ширину поля поиска */
+  height: 44px; /* Уменьшите высоту поля поиска */
+  font-size: 16px; /* Уменьшите размер шрифта */
+}
+
+.search_img {
+  margin-left: -580px; /* Измените отступ изображения линзы */
+}
+
+}
+
+
+
+
+.containersvg {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
